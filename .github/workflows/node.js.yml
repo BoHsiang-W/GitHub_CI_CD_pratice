@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
        run:
-         working-directory: ./Ch02/02_03_ci_for_javascript/
+         working-directory: ./Ch02/
     strategy:
       matrix:
         node-version: [22.x]
