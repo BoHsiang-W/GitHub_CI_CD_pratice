@@ -12,10 +12,7 @@ on:
 jobs:
   build:
 
-    runs-on: self-hosted
-    defaults:
-       run:
-         working-directory: ./Ch02/
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [22.x]
@@ -28,6 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: Ch02/02_03_ci_for_javascript/package-lock.json
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
