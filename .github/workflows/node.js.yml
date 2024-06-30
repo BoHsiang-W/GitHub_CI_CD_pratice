@@ -9,13 +9,13 @@ on:
   pull_request:
     branches: [ "master" ]
 
+defaults:
+    run:
+      working-directory: Ch02/02_03_ci_for_javascript/
 jobs:
   build:
 
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./GitHub_CI_CD_pratice/Ch02/02_03_ci_for_javascript/
     strategy:
       matrix:
         node-version: [22.x]
