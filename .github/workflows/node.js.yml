@@ -15,7 +15,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]  # Update with actual supported Node.js versions
+        node-version: [20.x]  # Update with actual supported Node.js versions
 
     steps:
     - name: Checkout repository
