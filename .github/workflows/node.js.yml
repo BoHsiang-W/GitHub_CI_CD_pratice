@@ -11,7 +11,7 @@ on:
 
 defaults:
     run:
-      working-directory: Ch02/02_03_ci_for_javascript/
+      working-directory: ./Ch02/02_03_ci_for_javascript/
 jobs:
   build:
 
