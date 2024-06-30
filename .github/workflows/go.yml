@@ -30,6 +30,8 @@ jobs:
       with:
         go-version-file: 'go.mod'
         cache: true
+        cache-dependency-path: |
+            Ch02/02_05_ci_for_go
 
     - name: Revive Action
       uses: morphy2k/revive-action@v2.4.1
