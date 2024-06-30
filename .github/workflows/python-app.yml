@@ -16,6 +16,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: Ch02/02_04_ci_for_python
 
     steps:
     - uses: actions/checkout@v4
