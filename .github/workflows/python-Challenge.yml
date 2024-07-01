@@ -20,7 +20,7 @@ jobs:
       checks: write
     defaults:
       run:
-        working-directory: Ch02/02_07_solution_develop_a_ci_pipeline
+        working-directory: Ch02/02_06_challenge_develop_a_ci_pipeline
     
     steps:
     - uses: actions/checkout@v4
