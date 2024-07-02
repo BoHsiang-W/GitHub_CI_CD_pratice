@@ -14,6 +14,9 @@ jobs:
     permissions:
       contents: read
       packages: write
+    defaults:
+      run:
+        working-directory: Ch03/03_03_ci_cd_for_software_packages        
 
     steps:
     - uses: actions/checkout@v4
